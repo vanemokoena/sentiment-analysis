@@ -24,18 +24,20 @@ COLORS = {"positive": "#2fb67c", "neutral": "#9aa5b8", "negative": "#e5484d"}
 st.markdown(
     """
     <style>
-      .block-container {padding-top: 1.6rem; padding-bottom: 3rem; max-width: 1280px;}
+      .block-container {padding-top: 4.5rem; padding-bottom: 3rem; max-width: 1280px;}
       footer, #MainMenu {visibility: hidden;}
       .masthead {
         border-left: 6px solid #f5a524; padding: .2rem 0 .2rem 1rem; margin-bottom: 1.2rem;
       }
-      .masthead .title {font-size: 2rem; font-weight: 700; line-height: 1.2; margin: 0;}
+      .masthead .title {font-size: 2rem; font-weight: 700; line-height: 1.35; margin: 0; padding-top: .15rem;}
       .masthead .sub {opacity: .75; margin: .35rem 0 0 0; font-size: 1rem; max-width: 60rem;}
       [data-testid="stMetric"] {
         background: rgba(128,138,158,.10); border: 1px solid rgba(128,138,158,.25);
         border-radius: 12px; padding: .8rem 1rem;
       }
       [data-testid="stMetricLabel"] {opacity: .8;}
+      [data-testid="stMetricValue"] {font-size: 2rem;}
+      [data-testid="stMetricValue"] > div {white-space: normal; overflow: visible; text-overflow: clip; line-height: 1.2;}
       .quote {
         border-left: 4px solid #4f8cff; padding: .6rem 1rem; border-radius: 0 10px 10px 0;
         background: rgba(79,140,255,.08); font-size: 1.02rem;
